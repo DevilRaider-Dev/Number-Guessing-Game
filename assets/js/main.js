@@ -109,13 +109,14 @@ function start() {
 
     game.input = getId("guess").value;
 
-    if (!game.running) {
+    if (game.running) {
+        output[1] = `Game restarted, take a guess`;
+        readRounds();
+    } else {
         output[1] = `Game started, take a guess`;
         readRounds();
         game.running = true;
-    } else {
-        output[1] = `Game restarted, take a guess`;
-        readRounds();
+        getId("start").innerHTML = "restart"
     }
     writeResult(true);
     output = ["Result:<br>"];
