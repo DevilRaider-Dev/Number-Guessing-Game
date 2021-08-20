@@ -63,8 +63,8 @@ function writeResult(result) {
         getId("result").innerHTML = `${output[1]}<br>`;
     } else {
         getId("result").innerHTML = `${reverse.pop()}<br>`;
-        reverse.forEach(i => {
-            getId("result").innerHTML += `${i}<br>`;
+        reverse.forEach(element => {
+            getId("result").innerHTML += `${element}<br>`;
         });
     }
 }
@@ -78,11 +78,9 @@ function guess() {
 
         game.round--;
         if (game.input < game.target) {
-            console.log("foo  " + game.input + " " + game.target)
             output.push(`${game.input} is to Low - Next Try`);
             writeResult(false);
         } else if (game.input > game.target) {
-            console.log("bar " + game.input + " " + game.target)
             output.push(`${game.input} is to high - Next Try`);
             writeResult(false);
         } else if (game.input == game.target) {
