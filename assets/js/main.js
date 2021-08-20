@@ -8,7 +8,7 @@ function getId(element) {
 }
 
 function checkValidInput() {
-    return game.input > 0 && game.input < 101;
+    return game.input > 0 && game.input < 100;
 }
 
 //change rounds
@@ -95,7 +95,7 @@ function guess() {
             writeResult(true);
         }
     } else if (game.running) {
-        output.push(`Choose a Number between 1 and 100`);
+        output.push(`Choose a Number between 1 and 99`);
         writeResult(false);
     } else {
         output[1] = `Game not started, Press the Play Button`
