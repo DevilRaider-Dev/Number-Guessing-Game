@@ -92,6 +92,7 @@ function guess() {
             game.running = false;
             writeResult(true);
         }
+        
     } else if (game.running) {
         output.push(`Choose a Number between 1 and 99`);
         writeResult(false);
