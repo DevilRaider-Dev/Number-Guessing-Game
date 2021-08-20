@@ -11,8 +11,32 @@
 </head>
 
 <body>
-  <div class="container"></div>
-<script src="assets/js/main.js"></script>
+  <div class="container">
+    <div class="lSide">
+      <h3>In how many rounds you think you can guess the number?</h3>
+      <div class="underline"></div>
+      <div class="rounds">
+        <input type="radio" name="rounds" id="roundsFour" onchange="showCostumTextBox()" checked>
+        <label for="">4 Rounds<br></label>
+        <input type="radio" name="rounds" id="roundsFive" onchange="showCostumTextBox()">
+        <label for="">5 Rounds<br></label>
+        <input type="radio" name="rounds" id="roundsSix" onchange="showCostumTextBox()">
+        <label for="">6 Rounds<br></label>
+        <input type="radio" name="rounds" id="roundsCostum" onchange="showCostumTextBox()">
+        <label for="">Costum Rounds<br></label>
+        <input type="text" id="txt-costumRounds" onchange="showCostumTextBox()">
+      </div>
+      </select>
+    </div>
+    <div class="rtSide">
+      <p id="result">Result: <br></p>
+    </div>
+    <div class="rbSide">
+      <input type="number" name="" id="input">
+      <button onclick="guess()">Guess</button>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
