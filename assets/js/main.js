@@ -49,7 +49,7 @@ function readRounds() {
         }
     };
     game.round = game.rounds;
-    game.target = (Math.random() * 100).toFixed(0)
+    game.target = (Math.random() * 100 + 1).toFixed(0)
 }
 
 //write rounds remain and play log to result
