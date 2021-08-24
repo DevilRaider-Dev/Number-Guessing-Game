@@ -72,7 +72,7 @@ function writeResult(result) {
 //read input and take a guess
 function guess() {
 
-    game.input = getId("guess").value;
+    game.input = Number(getId("guess").value);
 
     if (game.running && checkValidInput()) {
 
@@ -106,7 +106,7 @@ function guess() {
 //start/restart game
 function start() {
 
-    game.input = getId("guess").value;
+    game.input = Number(getId("guess").value);
 
     if (game.running) {
         output[1] = `Game restarted, take a guess`;
