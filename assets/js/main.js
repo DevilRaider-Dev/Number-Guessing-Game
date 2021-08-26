@@ -99,7 +99,7 @@ function guess() {
         writeResult(false);
     } else {
         output[1] = `Game not started, Press the Play Button`
-        getRounds();
+        readRounds();
         writeResult(true);
     }
 }
