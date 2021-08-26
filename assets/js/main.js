@@ -87,7 +87,8 @@ function guess() {
             output[1] = "WIN - Try Again";
             game.running = false;
             writeResult(true);
-        } else if (game.round == 0) {
+        } 
+        if (game.round == 0) {
             output[1] = "Loose - Try Again";
             game.running = false;
             writeResult(true);
